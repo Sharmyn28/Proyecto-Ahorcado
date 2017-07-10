@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8" />
+   	<title>Ahorcado</title>
+    <script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="node_modules/sweetalert/dist/sweetalert.css">
+  </head>
+   <body bgcolor="yellow" text="red" onLoad="inicio();">
+   	<IMG src="aho1.gif" border="5" height="390" width="390" style="position:absolute; left:370" name="imagen0">
+      <IMG src="aho2.gif" border="5" height="390" width="390" style="position:absolute; left:370; visibility:hidden" name="imagen1">
+      <IMG src="aho3.gif" border="5" height="390" width="390" style="position:absolute; left:370; visibility:hidden" name="imagen2">
+      <IMG src="aho4.gif" border="5" height="390" width="390" style="position:absolute; left:370; visibility:hidden" name="imagen3">
+      <IMG src="aho5.gif" border="5" height="390" width="390" style="position:absolute; left:370; visibility:hidden" name="imagen4">
+      <IMG src="aho6.gif" border="5" height="390" width="390" style="position:absolute; left:370; visibility:hidden" name="imagen5">
+      <IMG src="aho7.gif" border="5" height="390" width="390" style="position:absolute; left:370; visibility:hidden" name="imagen6">
+      <B>Adivina la palabra secreta<BR>
+      <BR><INPUT type="text" name="estado" size="45"><BR>
+      <BR><BR>Introduce letra<BR>
+      <BR><INPUT type="text" name="letra" size="1"><BR>
+      <BR><BR>Letras usadas<BR></B>
+      <BR><INPUT type="text" name="usadas" size="30"><BR>
+      <BR><BR><INPUT type="button" value="Comprobar" onclick="comprobar();"><BR>
+      <BR><BR><INPUT type="button" value="Reiniciar" onclick="reiniciar();"><BR>
+   </body>
+</html>
