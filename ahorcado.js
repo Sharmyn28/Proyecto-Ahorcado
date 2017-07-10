@@ -12,8 +12,8 @@ function obtienerPalabraSecreta() {
   var indice = Math.round ( Math.random() * 27 );
   var cadena = new String( libreriaPalabras[indice] );
   var palabra = cadena.split(" ");
-  /*palabra = palabra.join("");
-  palabra = palabra.toString(); */
+  //palabra = palabra.join("");
+  //palabra = palabra.toString();
   return palabra;
 }
 /*
@@ -39,6 +39,8 @@ function iniciar(){
 
 function jugar (){
   var palabra = obtienerPalabraSecreta();
+  //palabra = palabra.join("");
+  //palabra = palabra.toString();
   var secreta = palabra;
     var palAsteriscos = "";
     var flagAcierto = false;
@@ -134,7 +136,7 @@ function jugar (){
   }while(fallas < 7)
 
     if(!flagGanar){
-      sweetAlert("Has perdido", "Mensaje del sistema", "error");
+      sweetAlert("Has perdido, la palabra secreta era: "+ secreta, "Mensaje del sistema", "error");
       //alert("Perdiste, la palabra secreta era: " + secreta);
     }
 
